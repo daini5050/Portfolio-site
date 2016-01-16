@@ -1,9 +1,15 @@
 $primary-color: #fff;
 
+@mixin box-sizing {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	@include box-sizing;
 }
 
 body {
@@ -33,12 +39,13 @@ a {
 	color: $primary-color;
 }
 
-.main {
+.main, #head {
 	min-height: 100vh;
 	background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.9)), url("c2.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
+	background-attachment: fixed;
 	.wrapper {
 		position: relative;
 		.header {
@@ -49,6 +56,7 @@ a {
 				float: left;
 				margin-top: 10px;
 				font-weight: 700;
+				letter-spacing: -3px;
 			}
 			nav {
 				float: right;
@@ -56,10 +64,10 @@ a {
 				.nav-links {
 					margin-left: 25px;
 					font-size: 16px;
-					transition: all 0.35s;
-					color: rgba(255, 255, 255, .7)
+					transition: all 0.2s;
+					color: rgba(255, 255, 255, .7);
 				}
-				.nav-links:hover, .nav-links:first-child {
+				.nav-links:hover, .active {
 					color: rgba(255, 255, 255, 1);
 				}
 			}
@@ -84,6 +92,7 @@ span, home-cta {
 		color: $primary-color;
 		text-align: center;
 		padding-top: 300px;
+		letter-spacing: -1px;
 	}
 	h3 {
 		font-size: 30px;
@@ -91,6 +100,7 @@ span, home-cta {
 		color: $primary-color;
 		text-align: center;
 		margin-top: 0;
+		letter-spacing: -1px;
 	}
 }
 
@@ -113,7 +123,95 @@ span, home-cta {
     text-decoration: underline;   
 }
 
+/*****************************/
+/* HEADER PORTFOLIO SECTION */
+/****************************/
+#head {
+	min-height: 50vh;
+	background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.2)), url("c3.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	.port {
+		padding-top: 150px;
+		font-size: 70px;
+	}
+}
+
 main {
 	height: 3000px;
 	background: $primary-color;
+	.work-title {
+		text-align: center;
+		padding: 50px 0;
+		font-weight: 700;
+		color: #333;
+	}
+	.portfolio-item {
+		float: left;
+		margin: 0;
+		margin-bottom: 3%;
+		padding-left: 46px;
+	}
+	.portfolio-img {
+		filer: grayscale(100%);
+		&:hover {
+			filter: grayscale(60%);
+		}
+	}
+}
+
+/*****************************/
+/* 12 GRID FRAMEWORK */
+/****************************/
+.row {
+	width: 100%;
+}
+
+.col-1 {
+	width: 8.3333%;
+}
+
+.col-2 {
+	width: 16.6666%;
+}
+
+.col-3 {
+	width: 25%;
+}
+
+.col-4 {
+	width: 33.3333%;
+}
+
+.col-5 {
+	width: 41.6666%;
+}
+
+.col-6 {
+	width: 50%;
+}
+
+.col-7 {
+	width: 58.3333%;
+}
+
+.col-8 {
+	width: 66.6666%;
+}
+
+.col-9 {
+	width: 75%;
+}
+
+.col-10 {
+	width: 83.333%;
+}
+
+.col-11 {
+	width: 91.6666%;
+}
+
+.col-12 {
+	width: 100%;
 }

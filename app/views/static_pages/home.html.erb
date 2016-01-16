@@ -1,33 +1,24 @@
+<% provide(:title, "Home") %>
 <div class="main">
-		<div class="wrapper">
-			<header class="header clearfix">
-				<h1 class="logo">
-					<%= link_to 'Daini Sani', root_path, class: 'nav-links' %>
-				</h1>
-				<nav>
-					<%= link_to 'Home', root_path, class: 'nav-links' %> 
-					<%= link_to 'About', about_path, class: 'nav-links' %>
-					<%= link_to 'Work', work_path, class: 'nav-links' %>
-					<%= link_to 'Contact', contact_path, class: 'nav-links' %>
-				</nav>	
-			</header>
-			<span>
-				<h2>
-					Hi, I'm Daini Sani.
-				</h2>
-			</span>
-			<span>
-				<h3>
-					Front-end &amp; Ruby on rails developer.
-				</h3>
-			</span>
-			<a class="home-cta js--scroll-to-about" href="#">Learn more about what we do
-                <svg class="home-cta-arrow" width="16" height="8" viewBox="0 0 16 9" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.34.495L8.028 7.87.715.495" stroke="#fff" stroke-width="1.5px" fill="none"></path>
-                </svg>
-            </a>
-		</div>
+	<div class="wrapper">
+		<%= render 'static_pages/header' %>
+		<span>
+			<h2>
+				Hi, I'm Daini Sani.
+			</h2>
+		</span>
+		<span>
+			<h3>
+				Front-end &amp; Ruby on rails developer.
+			</h3>
+		</span>
+		<a class="home-cta js--scroll-to-about" href="#">Learn more about what we do
+            <svg class="home-cta-arrow" width="16" height="8" viewBox="0 0 16 9" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.34.495L8.028 7.87.715.495" stroke="#fff" stroke-width="1.5px" fill="none"></path>
+            </svg>
+        </a>
 	</div>
-	<main class="wrapper row">
+</div>
+<main class="wrapper row">
 
-	</main>
+</main>

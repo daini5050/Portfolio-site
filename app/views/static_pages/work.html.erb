@@ -1,2 +1,65 @@
-<h1>StaticPages#work</h1>
-<p>Find me in app/views/static_pages/work.html.erb</p>
+<% provide(:title, "Work") %>
+<div id="head">
+	<div class="wrapper">
+		<%= render 'static_pages/header' %>
+		<span>
+			<h2 class="port">
+				Portfolio
+			</h2>
+		</span>
+	</div>
+</div>
+<main class="wrapper row">
+	<h3 class=work-title>Here are some of my latest work.</h3>
+	<div class="row clearfix">
+		<figure class="portfolio-item col-4 design">
+        <a href="#">
+          <img src="http://lorempixel.com/705/400" alt="" class="portfolio-img">
+        </a>
+      </figure>
+      <figure class="portfolio-item col-4 general">
+        <a href="#">
+          <img src="http://lorempixel.com/704/400" alt="" class="portfolio-img">
+        </a>
+      </figure>
+      <figure class="portfolio-item col-4 corperate">
+        <a href="#">
+          <img src="http://lorempixel.com/703/400" alt="" class="portfolio-img">
+        </a>
+      </figure>
+	</div>
+	<div class="row clearfix">
+		<figure class="portfolio-item col-4 general">
+        <a href="#">
+          <img src="http://lorempixel.com/705/400" alt="" class="portfolio-img">
+        </a>
+      </figure>
+      <figure class="portfolio-item col-4 corperate">
+        <a href="#">
+          <img src="http://lorempixel.com/704/400" alt="" class="portfolio-img">
+        </a>
+      </figure>
+      <figure class="portfolio-item col-4 design">
+        <a href="#">
+          <img src="http://lorempixel.com/703/400" alt="" class="portfolio-img">
+        </a>
+      </figure>
+	</div>
+	<div class="row clearfix">
+		<figure class="portfolio-item col-4 general">
+        <a href="#">
+          <img src="http://lorempixel.com/705/400" alt="" class="portfolio-img">
+        </a>
+      </figure>
+      <figure class="portfolio-item col-4 design">
+        <a href="#">
+          <img src="http://lorempixel.com/704/400" alt="" class="portfolio-img">
+        </a>
+      </figure>
+      <figure class="portfolio-item col-4 corperate">
+        <a href="#">
+          <img src="http://lorempixel.com/703/400" alt="" class="portfolio-img">
+        </a>
+      </figure>
+	</div>
+</main>
