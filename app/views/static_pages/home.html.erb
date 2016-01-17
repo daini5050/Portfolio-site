@@ -1,7 +1,17 @@
 <% provide(:title, "Home") %>
 <div class="main">
 	<div class="wrapper">
-		<%= render 'static_pages/header' %>
+		<header class="header clearfix">
+			<h1 class="logo">
+				<%= link_to 'Daini Sani', root_path, class: 'nav-links' %>
+			</h1>
+			<nav>
+				<%= link_to 'Home', root_path, class: 'nav-links active' %> 
+				<%= link_to 'About', about_path, class: 'nav-links' %>
+				<%= link_to 'Work', work_path, class: 'nav-links' %>
+				<%= link_to 'Contact', contact_path, class: 'nav-links' %>
+			</nav>	
+		</header>
 		<span>
 			<h2>
 				Hi, I'm Daini Sani.
@@ -9,16 +19,69 @@
 		</span>
 		<span>
 			<h3>
-				Front-end &amp; Ruby on rails developer.
+				Front-end &amp; Ruby on Rails developer.
 			</h3>
 		</span>
-		<a class="home-cta js--scroll-to-about" href="#">Learn more about what we do
-            <svg class="home-cta-arrow" width="16" height="8" viewBox="0 0 16 9" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.34.495L8.028 7.87.715.495" stroke="#fff" stroke-width="1.5px" fill="none"></path>
-            </svg>
-        </a>
+		<div class="intro">
+		<p id="typer" class="writer">
+            I enjoy building everything from small business sites to rich interactive web apps. <br>If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me here.
+        </p>
+		</div>
+		<a class="learn-btn" href="inquiry-form.html">Get Started</a>
+		<a class="learn-btn hire-btn" href="inquiry-form.html">Hire Me</a>
 	</div>
 </div>
 <main class="wrapper row">
-
+	<h3 class=work-title>Here are some of my latest work.</h3>
+	<div class="row clearfix">
+		<figure class="portfolio-item col-4 design">
+        <a href="#">
+          <img src="http://lorempixel.com/440/270" alt="" class="portfolio-img">
+        </a>
+      </figure>
+      <figure class="portfolio-item col-4 general">
+        <a href="#">
+          <img src="http://lorempixel.com/440/270" alt="" class="portfolio-img">
+        </a>
+      </figure>
+      <figure class="portfolio-item col-4 corperate">
+        <a href="#">
+          <img src="http://lorempixel.com/440/270" alt="" class="portfolio-img">
+        </a>
+      </figure>
+	</div>
+	<div class="row clearfix">
+		<figure class="portfolio-item col-4 general">
+        <a href="#">
+          <img src="http://lorempixel.com/440/270" alt="" class="portfolio-img">
+        </a>
+      </figure>
+      <figure class="portfolio-item col-4 corperate">
+        <a href="#">
+          <img src="http://lorempixel.com/440/270" alt="" class="portfolio-img">
+        </a>
+      </figure>
+      <figure class="portfolio-item col-4 design">
+        <a href="#">
+          <img src="http://lorempixel.com/440/270" alt="" class="portfolio-img">
+        </a>
+      </figure>
+	</div>
+	<div class="row clearfix">
+		<figure class="portfolio-item col-4 general">
+        <a href="#">
+          <img src="http://lorempixel.com/440/270" alt="" class="portfolio-img">
+        </a>
+      </figure>
+      <figure class="portfolio-item col-4 design">
+        <a href="#">
+          <img src="http://lorempixel.com/440/270" alt="" class="portfolio-img">
+        </a>
+      </figure>
+      <figure class="portfolio-item col-4 corperate">
+        <a href="#">
+          <img src="http://lorempixel.com/440/270" alt="" class="portfolio-img">
+        </a>
+      </figure>
+	</div>
 </main>
