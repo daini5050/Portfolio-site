@@ -43,7 +43,7 @@ a {
 .main, #head {
 	min-height: 70vh;
 	margin-bottom: 3rem;
-	background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.5)), url("home-bg.png");
+	background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.5)), image-url("home-bg.png");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -157,7 +157,7 @@ a.hire-btn:hover {
 /****************************/
 #head {
 	min-height: 50vh;
-	background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.2)), url("c3.jpg");
+	background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.2)), image-url("c3.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
