@@ -1,11 +1,24 @@
 <% provide(:title, "Contact") %>
-<div id="head">
+<div class="contact-bg">
 	<div class="wrapper">
-		<%= render 'static_pages/header' %>
-		<span>
-			<h2 class="port">
-				Contact
-			</h2>
-		</span>
+		<header class="header clearfix">
+			<h1 class="logo">
+				<%= link_to 'Daini Sani', root_path, class: 'nav-links' %>
+			</h1>
+			<nav>
+				<%= link_to 'Home', root_path, class: 'nav-links' %> 
+				<%= link_to 'About', about_path, class: 'nav-links' %>
+				<%= link_to 'Work', work_path, class: 'nav-links' %>
+				<%= link_to 'Contact', contact_path, class: 'nav-links active' %>
+			</nav>	
+		</header>
 	</div>
 </div>
+<main class="wrapper">
+	<div class="row">
+		<div class="col-12">
+			<h2 class="contact-title">Thanks for getting in touch!</h2>
+			<h3 class="details-tilte">I'd like to talk to you. Just tell me a few things</h3>
+		</div>
+	</div>
+</main>

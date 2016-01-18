@@ -1,7 +1,17 @@
 <% provide(:title, "About") %>
 <div id="head">
 	<div class="wrapper">
-		<%= render 'static_pages/header' %>
+		<header class="header clearfix">
+			<h1 class="logo">
+				<%= link_to 'Daini Sani', root_path, class: 'nav-links' %>
+			</h1>
+			<nav>
+				<%= link_to 'Home', root_path, class: 'nav-links' %> 
+				<%= link_to 'About', about_path, class: 'nav-links active' %>
+				<%= link_to 'Work', work_path, class: 'nav-links' %>
+				<%= link_to 'Contact', contact_path, class: 'nav-links' %>
+			</nav>	
+		</header>
 		<span>
 			<h2 class="port">
 				About
