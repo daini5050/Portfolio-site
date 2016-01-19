@@ -1,5 +1,5 @@
-<% provide(:title, "About") %>
-<div id="head">
+<% provide(:title, "Contact") %>
+<div class="contact-bg">
 	<div class="wrapper">
 		<header class="header clearfix">
 			<h1 class="logo">
@@ -12,10 +12,20 @@
 				<%= link_to 'Contact', new_contact_path, class: 'nav-links' %>
 			</nav>	
 		</header>
-		<span>
-			<h2 class="port">
-				About
-			</h2>
-		</span>
 	</div>
 </div>
+<main class="wrapper">
+	<div class="row clearfix abt-page">
+		<div class="col-2 abt-pg-content abt-pa-content-left">
+			<img src="/assets/me.jpg" class="img-me" alt="image of Daini Sani">
+		</div>
+		<div class="col-10 abt-pg-content abt-pg-content-right">
+			<h2 class="contact-title">About</h2>
+			<p class="details-tilte">
+				We are excited to launch our new company and product Ooooh. After being featured in too many magazines to mention and having created an online stir, we know that Ooooh is going to be big. You may have seen us in the Dinosaurs’ Den where we were we told that we didn’t need them because we were already doing it so well ourselves, so that’s what we have continued to do. We also hope to win Startup Fictional Business of the Year this Year.
+			</p>
+		</div>
+	</div>
+	<br>
+	<hr class="pad-bottom">
+</main>

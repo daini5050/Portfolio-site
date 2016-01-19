@@ -7,7 +7,8 @@ $primary-color: #f5f5f5;
 		position: relative;
 		.header {
 			margin-top: 0;
-			padding-top: 15px;
+			padding-top: 20px;
+			margin-bottom: -30px;
 			width: 100%;
 			.logo {
 				float: left;
@@ -76,7 +77,7 @@ a {
 
 .main, #head {
 	min-height: 70vh;
-	margin-bottom: 3rem;
+	margin-bottom: 1rem;
 	background: #5cc1af;
 	background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.5)), url("https://static.pexels.com/photos/14676/pexels-photo-14676.png");
 	background-repeat: no-repeat;
@@ -101,10 +102,10 @@ span, home-cta {
 	text-align: center;
 	color: $primary-color;
 	h2 {
-		font-size: 4.375rem;
+		font-size: 7rem;
 		font-weight: 800;
 		color: $primary-color;
-		padding-top: 200px;
+		padding-top: 150px;
 		letter-spacing: -1px;
 		text-align: center;
 	}
@@ -192,6 +193,7 @@ main {
 		text-align: center;
 		margin-bottom: 2rem;
 		padding: 50px 0;
+		font-size: 23px;
 		font-weight: 700;
 		color: #333;
 	}
@@ -265,7 +267,8 @@ main {
 /* CONTACT PAGE */
 /****************************/
 .contact-bg {
-	background: #1c1c1c;
+	background: #e9573f;
+	border-bottom: 5px solid #1c1e29;
 	@include header-navbar;
 }
 
@@ -317,6 +320,33 @@ input[type="submit"] {
 }
 
 /*****************************/
+/* ABOUT PAGE */
+/****************************/
+.img-me {
+	width: 120px;
+	height: 120px;
+	border: 2px solid #999;
+	border-radius: 100%;
+	padding: 3px;
+}
+
+.abt-page {
+	padding-top: 3rem;
+}
+
+.abt-pg-content {
+	float: left;
+}
+
+.abt-pg-content-right {
+	padding-left: 1em;
+	line-height: 1.8em;
+	h2 {
+		margin-bottom: .75em;
+	}
+}
+
+/*****************************/
 /* FOOTER SECTION */
 /****************************/
 footer {
@@ -324,6 +354,7 @@ footer {
 	padding: 2rem 0 1.5rem 0;
 	font-size: 80%;
 	line-height: 160%;
+	border-top: 2px solid transparent;
 	nav, .address {
 		color: inherit;
 		float: left;
@@ -350,6 +381,7 @@ footer {
 	}
 	.address {
 		color: #999;
+		padding-left: 1.5em;
 		address {
 			font-size: 90%;
 		}
