@@ -9,7 +9,7 @@
 				<%= link_to 'Home', root_path, class: 'nav-links active' %> 
 				<%= link_to 'About', about_path, class: 'nav-links' %>
 				<%= link_to 'Work', work_path, class: 'nav-links' %>
-				<%= link_to 'Contact', new_contact_path, class: 'nav-links' %>
+				<%= link_to 'Contact', contact_path, class: 'nav-links' %>
 			</nav>	
 		</header>
 		<span>
@@ -28,7 +28,7 @@
         </p>
 		</div>
 		<div class="action">
-			<a class="learn-btn" href="inquiry-form.html">Get Started</a>
+			<%= link_to "Get Started", new_contact_path, class: "learn-btn" %>
 			<a class="learn-btn hire-btn" href="inquiry-form.html">Hire Me</a>
 		</div>
 	</div>

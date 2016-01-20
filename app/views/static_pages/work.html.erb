@@ -1,12 +1,19 @@
 <% provide(:title, "Work") %>
-<div id="head">
+<div class="contact-bg">
 	<div class="wrapper">
-		<%= render 'static_pages/header' %>
-		<span>
-			<h2 class="port">
-				Portfolio
-			</h2>
-		</span>
+		<header class="header clearfix">
+			<h1 class="logo">
+				<%= link_to 'Daini Sani', root_path, class: 'nav-links' %>
+			</h1>
+			<nav>
+				<%= link_to 'Home', root_path, class: 'nav-links' %> 
+				<%= link_to 'About', about_path, class: 'nav-links' %>
+				<%= link_to 'Work', work_path, class: 'nav-links active' %>
+				<%= link_to 'Contact', new_contact_path, class: 'nav-links' %>
+			</nav>	
+		</header>
 	</div>
 </div>
-
+<main class="wrapper">
+	<h2>Details of projects will go here.</h2>
+</main>
