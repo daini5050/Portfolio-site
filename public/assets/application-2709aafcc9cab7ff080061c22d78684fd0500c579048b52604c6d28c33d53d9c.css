@@ -1,0 +1,1442 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */ /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 33, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 54, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 77, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 97, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 109, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 117, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 126, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 135, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 144, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 153, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 161, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 169, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+sup {
+  top: -0.5em;
+}
+
+/* line 173, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 184, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 192, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 203, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 211, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 229, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 252, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 277, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 290, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 302, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 311, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 334, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 346, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 357, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 370, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 379, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 390, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 399, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 408, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 419, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 424, c:/Sites/portfolio-site/site/app/assets/stylesheets/_normalize.css */
+td,
+th {
+  padding: 0;
+}
+
+/* line 37, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 45, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+body {
+  background: #f0f0f0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+/* line 54, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+/* line 60, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.clearfix::after {
+  clear: both;
+}
+
+/* line 64, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.hidden {
+  display: none;
+}
+
+/* line 68, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 73, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+a {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+/* line 78, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.main, #head {
+  min-height: 50vh;
+  margin-bottom: 1rem;
+  background: #5cc1af;
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("home-bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("home-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* line 6, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.main .wrapper, #head .wrapper {
+  position: relative;
+}
+/* line 8, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.main .wrapper .header, #head .wrapper .header {
+  margin-top: 0;
+  padding-top: 20px;
+  margin-bottom: -30px;
+  width: 100%;
+}
+/* line 13, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.main .wrapper .header .logo, #head .wrapper .header .logo {
+  float: left;
+  margin-top: 10px;
+  font-weight: 700;
+  letter-spacing: -3px;
+}
+/* line 19, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.main .wrapper .header nav, #head .wrapper .header nav {
+  float: right;
+  margin-top: 20px;
+}
+/* line 22, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.main .wrapper .header nav .nav-links, #head .wrapper .header nav .nav-links {
+  margin-left: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: rgba(255, 255, 255, 0.7);
+}
+/* line 29, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.main .wrapper .header nav .nav-links:hover, .main .wrapper .header nav .active, #head .wrapper .header nav .nav-links:hover, #head .wrapper .header nav .active {
+  color: white;
+}
+
+@media (min-width: 80rem) {
+  /* line 91, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+  .wrapper {
+    position: relative;
+    max-width: 67.5rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.5rem 0 2rem 0;
+  }
+}
+/* line 100, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+span, home-cta {
+  width: 100%;
+  text-align: center;
+  color: #f5f5f5;
+}
+/* line 104, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+span h2, home-cta h2 {
+  font-size: 6.5rem;
+  font-weight: 800;
+  color: #f5f5f5;
+  padding-top: 150px;
+  letter-spacing: -1px;
+  text-align: center;
+}
+/* line 112, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+span h3, home-cta h3 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #f5f5f5;
+  margin-top: 0;
+  letter-spacing: -1px;
+  text-align: center;
+}
+/* line 120, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+span .port, home-cta .port {
+  text-align: center;
+}
+
+/* line 125, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.intro {
+  line-height: 25px;
+  margin-top: 2rem;
+  font-weight: 300;
+  color: #f5f5f5;
+}
+
+/* line 132, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.intro, .action {
+  text-align: center;
+}
+
+/* line 136, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+a.learn-btn {
+  margin-top: 2rem;
+  margin-right: 10px;
+  padding: 0.75rem 1.75rem;
+  text-align: center;
+  display: inline-block;
+  background: tomato;
+}
+
+/* line 145, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+a.learn-btn:hover {
+  background: steelblue;
+}
+
+/* line 149, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+a.hire-btn {
+  background-color: rgba(255, 255, 255, 0.14);
+}
+
+/* line 153, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+a.hire-btn:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* line 157, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.home-cta {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 160%;
+  color: rgba(255, 255, 255, 0.8);
+  display: block;
+  font-size: 0.6875em;
+  left: 50%;
+  padding: 20px;
+  position: absolute;
+  letter-spacing: -2px;
+  white-space: nowrap;
+  letter-spacing: 2px;
+  z-index: 2;
+}
+
+/* line 172, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.home-cta:hover {
+  text-decoration: underline;
+}
+
+/*****************************/
+/* HEADER PORTFOLIO SECTION */
+/****************************/
+/* line 179, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+#head {
+  min-height: 50vh;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url(/assets/c3-93c93a4061e9fec0ae3b1a5b1738282734f6f24638b078a392f868cd0873d6b2.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url(/assets/c3-93c93a4061e9fec0ae3b1a5b1738282734f6f24638b078a392f868cd0873d6b2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* line 185, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+#head .port {
+  padding-top: 150px;
+  font-size: 70px;
+}
+
+/* line 192, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+main .work-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 50px 0;
+  font-size: 23px;
+  font-weight: 700;
+  color: #333;
+}
+/* line 200, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+main .portfolio-item {
+  float: left;
+  margin: 0;
+  margin-bottom: 3%;
+  padding-left: 46px;
+}
+/* line 205, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+main .portfolio-item:first-of-type {
+  padding-left: 0;
+}
+
+/*****************************/
+/* 12 GRID FRAMEWORK */
+/****************************/
+/* line 214, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.row {
+  width: 100%;
+}
+
+/* line 218, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.col-1 {
+  width: 8.3333%;
+}
+
+/* line 222, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.col-2 {
+  width: 16.6666%;
+}
+
+/* line 226, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.col-3 {
+  width: 25%;
+}
+
+/* line 230, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.col-4 {
+  width: 33.3333%;
+}
+
+/* line 234, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.col-5 {
+  width: 41.6666%;
+}
+
+/* line 238, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.col-6 {
+  width: 50%;
+}
+
+/* line 242, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.col-7 {
+  width: 58.3333%;
+}
+
+/* line 246, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.col-8 {
+  width: 66.6666%;
+}
+
+/* line 250, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.col-9 {
+  width: 75%;
+}
+
+/* line 254, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.col-10 {
+  width: 83.333%;
+}
+
+/* line 258, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.col-11 {
+  width: 91.6666%;
+}
+
+/* line 262, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.col-12 {
+  width: 100%;
+}
+
+/*****************************/
+/* CONTACT PAGE */
+/****************************/
+/* line 269, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.contact-bg {
+  background: #e9573f;
+  border-bottom: 5px solid #1c1e29;
+}
+/* line 6, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.contact-bg .wrapper {
+  position: relative;
+}
+/* line 8, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.contact-bg .wrapper .header {
+  margin-top: 0;
+  padding-top: 20px;
+  margin-bottom: -30px;
+  width: 100%;
+}
+/* line 13, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.contact-bg .wrapper .header .logo {
+  float: left;
+  margin-top: 10px;
+  font-weight: 700;
+  letter-spacing: -3px;
+}
+/* line 19, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.contact-bg .wrapper .header nav {
+  float: right;
+  margin-top: 20px;
+}
+/* line 22, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.contact-bg .wrapper .header nav .nav-links {
+  margin-left: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: rgba(255, 255, 255, 0.7);
+}
+/* line 29, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.contact-bg .wrapper .header nav .nav-links:hover, .contact-bg .wrapper .header nav .active {
+  color: white;
+}
+
+/* line 275, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.contact-title {
+  font-size: 60px;
+  color: #222;
+  margin: 2rem 0 1rem 0;
+}
+
+/* line 281, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.details-title {
+  font-size: 95px;
+  color: #222;
+}
+
+/* line 286, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+hr.pad-bottom {
+  margin-bottom: 1em;
+}
+
+/* line 290, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.form-wrapper {
+  margin-top: 1em;
+}
+
+/* line 294, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+input[type="text"],
+input[type="email"],
+textarea {
+  max-width: 100%;
+  width: 100%;
+  border: 2px solid #ccc;
+  margin: .25em 0 2em 0;
+  padding: 1em .5em;
+  height: 2.5em;
+}
+
+/* line 305, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+textarea {
+  min-height: 15em;
+}
+
+/* line 309, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+input[type="submit"] {
+  outline: none;
+  border: 2px solid #ccc;
+  background: transparent;
+  text-align: center;
+  font-size: 1em;
+  padding: 1em 2em;
+}
+/* line 316, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+input[type="submit"]:hover {
+  border: 2px solid tomato;
+  color: tomato;
+}
+
+/*****************************/
+/* ABOUT PAGE */
+/****************************/
+/* line 325, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.img-me {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #999;
+  border-radius: 100%;
+  padding: 3px;
+}
+
+/* line 333, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.abt-page {
+  padding-top: 3rem;
+}
+
+/* line 337, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.abt-pg-content {
+  float: left;
+}
+
+/* line 341, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.abt-pg-content-right {
+  padding-left: 1em;
+  line-height: 1.8em;
+}
+/* line 344, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.abt-pg-content-right h2 {
+  margin-bottom: .75em;
+}
+/* line 347, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.abt-pg-content-right h3 {
+  margin-bottom: .5em;
+  font-size: 25px;
+}
+/* line 351, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.abt-pg-content-right p {
+  margin-bottom: 1em;
+}
+/* line 354, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.abt-pg-content-right ul {
+  list-style: none;
+  margin-bottom: 1.5em;
+}
+/* line 358, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+.abt-pg-content-right b, .abt-pg-content-right strong {
+  font-size: 12px;
+}
+
+/*****************************/
+/* FOOTER SECTION */
+/****************************/
+/* line 366, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+footer {
+  background: #1c1e29;
+  padding: 2rem 0 1.5rem 0;
+  font-size: 80%;
+  line-height: 160%;
+  border-top: 2px solid transparent;
+}
+/* line 372, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+footer nav, footer .address {
+  color: inherit;
+  float: left;
+  margin-right: 6rem;
+}
+/* line 376, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+footer nav h5, footer .address h5 {
+  margin-bottom: 1rem;
+  font-size: 140%;
+  color: #f5f5f5;
+  font-weight: 800;
+}
+/* line 383, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+footer nav h5 {
+  letter-spacing: -2px;
+  font-size: 150%;
+}
+/* line 387, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+footer nav ul {
+  list-style: none;
+}
+/* line 389, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+footer nav ul li a {
+  margin: 0.5rem 0;
+  font-size: 14px;
+  font-weight: 800;
+  color: #999;
+}
+/* line 394, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+footer nav ul li a:hover {
+  color: #fff;
+}
+/* line 399, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+footer .address {
+  color: #999;
+  padding-left: 1.5em;
+}
+/* line 402, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+footer .address address {
+  font-size: 90%;
+}
+/* line 405, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+footer .address address a {
+  color: #999;
+}
+/* line 407, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+footer .address address a:hover {
+  color: #fff;
+}
+/* line 411, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+footer .address address {
+  margin-bottom: 0.5rem;
+}
+/* line 415, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+footer .footer-nav, footer .footer-nav-right {
+  margin-bottom: 1rem;
+  float: left;
+}
+/* line 422, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+footer hr {
+  opacity: 0.2;
+}
+/* line 425, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+footer .social {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+/* line 428, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+footer .social a {
+  margin-right: 1.5rem;
+  color: #ccc;
+  font-size: 15px;
+}
+/* line 433, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+footer .social a:hover {
+  color: #fff;
+}
+/* line 437, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+footer .social .fa-facebook {
+  color: #3b5998;
+}
+/* line 440, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+footer .social a .fa-facebook:hover {
+  color: #3b5998;
+}
+/* line 443, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+footer .social a .fa-github:hover, footer .social a .fa-codepen:hover {
+  color: #fff;
+}
+/* line 446, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+footer .social a .fa-twitter:hover {
+  color: #00aced;
+}
+/* line 449, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+footer .social .fa-twitter {
+  color: #00aced;
+}
+/* line 453, c:/Sites/portfolio-site/site/app/assets/stylesheets/custom.css.scss.erb */
+footer small {
+  color: #999;
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding: 1rem 0 0 0;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
