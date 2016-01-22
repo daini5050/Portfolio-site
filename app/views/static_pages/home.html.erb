@@ -5,11 +5,12 @@
 			<h1 class="logo">
 				<%= link_to 'Daini Sani', root_path, class: 'nav-links' %>
 			</h1>
-			<nav>
-				<%= link_to 'Home', root_path, class: 'nav-links active' %> 
-				<%= link_to 'About', about_path, class: 'nav-links' %>
-				<%= link_to 'Work', work_path, class: 'nav-links' %>
-				<%= link_to 'Contact', contact_path, class: 'nav-links' %>
+			<div class="navicon"><i class="fa fa-bars"></i></div>
+			<nav class="clearfix">
+					<%= link_to 'Home', root_path, class: 'nav-links active' %> 
+					<%= link_to 'About', about_path, class: 'nav-links' %>
+					<%= link_to 'Work', work_path, class: 'nav-links' %>
+					<%= link_to 'Contact', contact_path, class: 'nav-links' %>
 			</nav>	
 		</header>
 		<span>
@@ -38,7 +39,7 @@
 	<div class="row clearfix">
       <figure class="portfolio-item col-4 general">
         <a href="#">
-          <img src="http://lorempixel.com/440/300" alt="" class="portfolio-img">
+          <img src="http://lorempixel.com/400/300" alt="" class="portfolio-img">
         </a>
       </figure>
       <figure class="portfolio-item col-8 corperate">
@@ -72,7 +73,7 @@
       </figure>
       <figure class="portfolio-item col-4 corperate">
         <a href="#">
-          <img src="http://lorempixel.com/440/300" alt="" class="portfolio-img">
+          <img src="http://lorempixel.com/400/300" alt="" class="portfolio-img">
         </a>
       </figure>
 	</div>

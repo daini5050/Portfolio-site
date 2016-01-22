@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">	
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= full_title(yield(:title)) %></title>
   <link rel="stylesheet" type="text/css" href="css/animate.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -10,15 +12,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	
+	<div class="container">
 	<%= yield %>
 	<%= render 'layouts/footer' %>
 	<script>
 	    var win = $(window),
-	        foo = $('#typer');
-
-	    foo.typer(['Are you a business owner, a start-up, or a small company?', 'Are you an artist, a blogger, or an entrepreneur?', 'Are you looking to expand your business or product online?', 'or maybe you just need a website or web app?', 'if you answer yes to any of these questions,', 'then you are in the  right place.', 'Welcome to Daini Dev!', 'A freelance front-end and Ruby on rails developer.', 'Let\'s get started!' ]);
-
+        foo = $('#typer');
+	    foo.typer(['I enjoy building everything from small business sites', 'to rich interactive web apps.', 'If you are a business seeking a web presence', 'or an employer looking to hire,', 'you can get in touch with me here.']);
 	</script>
+	</div>
 </body>
 </html>
