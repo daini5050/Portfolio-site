@@ -9,7 +9,7 @@ group :development, :test do
 	gem 'sqlite3'
 end
 
-group :production do
+group :production, :staging do
 	gem 'pg', '~> 0.18.2'
 	gem 'rails_12factor'
 	gem 'puma', '~> 2.15', '>= 2.15.3'
