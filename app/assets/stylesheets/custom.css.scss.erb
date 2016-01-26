@@ -336,6 +336,132 @@ main {
 			padding: 0;
 		}
 	}
+	section {
+		padding: 3rem 0 1rem 0;
+		h2 {
+			text-align: center;
+			letter-spacing: 0.25px;
+		    text-transform: capitalize;
+		    color: #2995e2;
+			font-size: 30px;
+		}
+		.slider {
+		    background: rgba(255,255,255,1);
+		    position: relative;
+		    margin: 2rem 0;
+		    overflow: hidden;
+		    padding-bottom: 2.5rem;
+		    border: 0.25rem solid #95a5a6;
+		    .slide-switch {
+			    display: none;
+			}
+			.slide-switch:not(:checked) + .slide-label + .slide-content {
+			    opacity: 0;
+			    transition: opacity 0.35s;
+			}
+			    
+			.slide-switch:checked + .slide-label + .slide-content {
+			    animation: slide 1s;
+			}
+			    
+			.slide-switch:checked + .slide-label {
+			    background: #3498db;
+			}
+			.slide-label {
+			    position: absolute;
+			    bottom: 1rem;
+			    display: block;
+			    z-index: 5;
+			    height: 1rem;
+			    width: 1rem;
+			    text-indent: 1rem;
+			    overflow: hidden;
+			    background: #2980b8;
+			    border-radius: 50%;
+			    cursor: pointer;
+			    transition: all 0.25s;
+			}
+			.slide-label:nth-of-type(1) {
+			    left: 1rem;   
+			}
+			    
+			.slide-label:nth-of-type(2) {
+			    left: 2.5rem;   
+			}
+			    
+			.slide-label:nth-of-type(3) {
+			    left: 4rem;   
+			}
+			    
+			.slide-label:nth-of-type(4) {
+			    left: 5.5rem;   
+			}
+			    
+			.slide-label:nth-of-type(5) {
+			    left: 7rem;   
+			}
+			.slide-content {
+			    width: 100%;
+			    float: left;
+			    margin-right: -100%;
+			    background: rgba(255,255,255,1);
+			    blockquote {
+				    font-style: italic;
+				    font-size: 100%;
+				    color: #575250;
+				}
+				    
+				blockquote:before {
+				    content: "\201C";
+				    display: block;
+				    color: #d61b51;
+				    font-size: 400%;
+				    padding-top: 1rem;
+				}
+				    
+				cite {
+				    display: block;
+				    margin-top: 1.5625rem;
+				    font-size: 100%;
+				    color: #d61b51;
+				}
+				    
+				cite img {
+				    margin-right: 0.9375rem;
+				    height: 3.125em;
+				    border-radius: 50%;
+				    vertical-align: middle;
+				}
+
+				cite span {
+				    color: #575250;
+				    font-size: 0.75em;
+				}
+			}
+			.padded {
+			    padding: 1rem 2rem 2rem 2rem;   
+			}
+		}
+		.slider::after {
+		    position: absolute;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    z-index: 1;
+		    content: '';
+		    display: block;
+		    background: #34495e;
+		    height: 3rem;
+		}
+		@keyframes slide {
+		    0% {
+		     transform: translateX(100%);
+		    }
+		    100% {
+		        transform: translateX(0);
+		    }
+		}
+	}
 }
 
 
