@@ -1,6 +1,10 @@
 @import 'normalize';
 
 $primary-color: #f5f5f5;
+$phi: 1.618;
+
+$base_font_size: 16;
+$px: (1 / $base_font_size) * 1rem;
 
 @mixin header-navbar {
 	.wrapper {
@@ -32,7 +36,7 @@ $primary-color: #f5f5f5;
 			}
 			nav {
 				float: right;
-				margin-top: 22px;
+				margin-top: 26px;
 				.nav-links {
 					margin-left: 30px;
 					font-size: 14px;
@@ -88,6 +92,7 @@ $primary-color: #f5f5f5;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+	word-wrap: break-word;
 }
 
 /*****************************/
@@ -145,10 +150,10 @@ $primary-color: #f5f5f5;
 }
 
 body {
-	background: #f2f1f1;
-	font-family: 'Raleway', sans-serif;
+	background: #dfdfd0;
+	font-family: 'Raleway', sans-serif, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma;
 	font-size: 1rem;
-	line-height: 1.3;
+	line-height: 1.618;
 	h1 {
 	}
 }
@@ -353,7 +358,7 @@ main {
 		    margin: 2rem 0;
 		    overflow: hidden;
 		    padding-bottom: 2.5rem;
-		    border: 0.25rem solid #95a5a6;
+		    border: 0.1875rem solid #95a5a6;
 		    .slide-switch {
 			    display: none;
 			}
@@ -367,7 +372,7 @@ main {
 			}
 			    
 			.slide-switch:checked + .slide-label {
-			    background: #3498db;
+			    background: #fff;
 			}
 			.slide-label {
 			    position: absolute;
@@ -378,7 +383,7 @@ main {
 			    width: 1rem;
 			    text-indent: 1rem;
 			    overflow: hidden;
-			    background: #2980b8;
+			    background: #e9573f;
 			    border-radius: 50%;
 			    cursor: pointer;
 			    transition: all 0.25s;
@@ -503,7 +508,7 @@ main {
 			}
 			nav {
 				float: right;
-				margin-top: 22px;
+				margin-top: 26px;
 				.nav-links {
 					margin-left: 30px;
 					font-size: 14px;
@@ -603,6 +608,9 @@ textarea {
 	margin: .25em 0 2em 0;
 	padding: 1em .5em;
 	height: 2.5em;
+	&:focus {
+		outline-color: tomato;
+	}
 }
 
 textarea {
