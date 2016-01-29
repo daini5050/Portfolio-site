@@ -360,9 +360,6 @@ main {
 		float: left;
 		-webkit-filter: grayscale(40%);
   		filter: grayscale(40%);
-		a {
-			display: block;
-		}
 		.details {
 		    display: block;
 		    position: absolute;
@@ -385,6 +382,41 @@ main {
 			}
 		}
 	}
+	.item, .item-1, .item-2, .item-3 {
+		@media (max-width: 62.5rem) {
+			float: left;
+			margin-left: 4%;
+			width: 40%;
+			.item-3 {
+				margin-left: 0;
+				width: 100%;
+			}
+		}
+		@media (max-width: 30rem) {
+			float: none;
+			width: 100%;
+			.item-3 {
+				margin-left: 0;
+				float: none;
+				width: 100%;
+			}
+		}
+	}
+	@media (max-width: 62.5rem) {
+		.item-3 {
+			margin-left: 0;
+			width: 100%;
+			display: none;
+		}
+	}
+	@media (max-width: 30rem) {
+			.item-3 {
+				margin-left: 0;
+				float: none;
+				width: 100%;
+				display: block;
+			}
+		}
 	.general:last-of-type {
 		clear: both;
 	}
