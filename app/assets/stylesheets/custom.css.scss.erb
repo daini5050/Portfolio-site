@@ -157,12 +157,21 @@ $px: (1 / $base_font_size) * 1rem;
 }
 
 body {
-	background: #dfdfd0;
+	background: #E1E3E4;
 	font-family: 'Raleway', sans-serif, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma;
 	font-size: 1rem;
 	line-height: 1.618;
 	h1 {
 	}
+}
+.container {
+	max-width: 90rem;
+	width: 100%;
+	margin: 0 auto;
+	background: #fff;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+     -moz-box-shadow: 0 8px 6px -6px black;
+          box-shadow: 0 8px 6px -6px black;
 }
 
 .clearfix::before,
@@ -191,9 +200,9 @@ a {
 
 .main, #head {
 	width: 100%;
-	min-height: 60vh;
+	min-height: 65vh;
 	background: #5cc1af;
-	background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("home-bg.jpg");
+	background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("home-bg2.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -203,7 +212,7 @@ a {
 
 .wrapper {
 	position: relative;
-	max-width: 62.5rem;
+	max-width: 65rem;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0.5rem 0 2rem 0
@@ -216,7 +225,7 @@ span, home-cta {
 		font-size: 4.25rem;
 		font-weight: 700;
 		color: $primary-color;
-		padding-top: 100px;
+		padding-top: 200px;
 		letter-spacing: -1px;
 		@media (max-width: 54.6875rem) {
 			font-size: 4rem;
@@ -339,6 +348,49 @@ main {
 		font-weight: 700;
 		color: #333;
 	}
+	.first {
+		margin: 0;
+		margin-bottom: 2rem;
+		padding: 0;
+	}
+	.item-1, .item-2, .item-3 {
+		position: relative;
+		width: 30.66666667%;
+		margin-right: 4%;
+		float: left;
+		-webkit-filter: grayscale(40%);
+  		filter: grayscale(40%);
+		a {
+			display: block;
+		}
+		.details {
+		    display: block;
+		    position: absolute;
+		    top: 0;
+		    bottom: 2.5%;
+		    right: 0;
+		    left: 0;
+		    background-color: rgba(0,0,0,0.7);
+		    opacity: 0;
+		    transition: opacity .3s;
+		    -webkit-transition: opacity .3s;
+		    -moz-transition: opacity .3s;
+		    padding: 50px 0 0 40px;
+		    h2, p {
+		    	margin: 0;
+		    	padding: 0;
+		    }
+		    &:hover {
+				opacity: 1;
+			}
+		}
+	}
+	.general:last-of-type {
+		clear: both;
+	}
+	.item-3 {
+		margin-right: 0;
+	}
 	.portfolio-item {
 		float: left;
 		margin: 0;
@@ -363,9 +415,9 @@ main {
 			font-size: 30px;
 		}
 		.slider {
-		    background: rgba(255,255,255,1);
+		    background: #1c1e29;
 		    position: relative;
-		    margin: 2rem 0;
+		    margin: 2rem 0 1rem 0;
 		    overflow: hidden;
 		    padding-bottom: 2.5rem;
 		    border: 0.1875rem solid #95a5a6;
@@ -624,12 +676,17 @@ input[type="email"],
 textarea {
 	max-width: 100%;
 	width: 100%;
+	background: #f5f5f5;
 	border: 2px solid #ccc;
 	margin: .25em 0 2em 0;
 	padding: 1em .5em;
 	height: 2.5em;
+	&:hover {
+		background: inherit;
+	}
 	&:focus {
-		outline-color: tomato;
+		background: inherit;
+		outline-color: #1c1e29;
 	}
 }
 
@@ -712,7 +769,7 @@ main {
 /* FOOTER SECTION */
 /****************************/
 footer {
-	background: #1c1e29;
+	background: #333333;
 	padding: 2rem 0 0.25rem 0;
 	font-size: 80%;
 	line-height: 160%;
@@ -816,7 +873,7 @@ footer {
 		    
 		.front {
 		    transform: translateZ(2px); /* helps to give a slight impression of thickness to the card when its flippped */
-		    background: #34495e;
+		    background: #1c1e29;
 		    border-radius: 2rem 0;
 		    color: #cddbea;
 		}
@@ -862,7 +919,7 @@ footer {
 		    
 		.name {
 		    position: absolute;
-		    top: 4rem;
+		    top: 4.5rem;
 		    left: 0;
 		    right: 0;
 		    text-align: center;
@@ -876,7 +933,7 @@ footer {
 		    
 		.profession {
 		    position: absolute;
-		    top: 6.5rem;
+		    top: 6.75rem;
 		    left: 0;
 		    right: 0;
 		    text-align: center;
@@ -890,7 +947,7 @@ footer {
 		    bottom: 5rem;
 		    left: 0;
 		    right: 0;
-		    background: #34495e;
+		    background: #1c1e29;
 		    
 		}
 		    
@@ -900,7 +957,7 @@ footer {
 		    top: 0;
 		    left: -1rem;
 		    bottom: 0;
-		    width: 8.5rem;
+		    width: 9.5rem;
 		}
 		    
 		.item {
@@ -938,13 +995,13 @@ footer {
 		    left: 0;
 		    width: 0;
 		    bottom: 0;
-		    background: #34495e;
+		    background: #1c1e29;
 		    z-index: -1;
 		    transition: width 0.35s;
 		}
 		    
 		.item:hover::before {
-		    width: 35rem;
+		    width: 30rem;
 		    transition: width 0.35s;
 		}
     
@@ -961,7 +1018,7 @@ footer {
 		}
 		    
 		.item:hover::after {
-		    width: 9.5rem;
+		    width: 9.25rem;
 		    transition: width 0.35s;
 		}
 		    
@@ -972,7 +1029,8 @@ footer {
 		    
 		.front:after {
 		    content: 'CLICK TO FLIP';
-		    background: #34495e;
+		    background: #1c1e29;
+		    text-align: center;
 		    white-space: nowrap;
 		    position: absolute;
 		    top: 3rem;
