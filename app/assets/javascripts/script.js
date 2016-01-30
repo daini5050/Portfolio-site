@@ -22,4 +22,13 @@ $(document).ready(function() {
 
     });
 
+	var ypos, box;
+    function parallex() {
+    	ypos = window.pageYOffset;
+    	box = document.getElementById('box');
+
+    	box.style.top = ypos * .1 + 'px';
+    }
+    window.addEventListener('scroll', parallex);
+
 });
