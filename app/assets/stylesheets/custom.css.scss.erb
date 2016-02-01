@@ -1,5 +1,19 @@
 @import 'normalize';
 
+@font-face {
+	font-family: "Proxima-nova";
+	src: url(fonts/ProximaNovaRegular.otf);
+}
+
+@font-face {
+	font-family: "Proxima-nova-light";
+	src: url(fonts/ProximaNovaLight.otf);
+}
+
+p {
+	font-family: Proxima-nova-light;
+}
+
 $primary-color: #f5f5f5;
 $phi: 1.618;
 
@@ -157,7 +171,7 @@ $px: (1 / $base_font_size) * 1rem;
 
 body {
 	background: #E1E3E4;
-	font-family: 'Raleway', sans-serif, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma;
+	font-family: Proxima-nova;
 	font-size: 1rem;
 	line-height: 1.618;
 }
@@ -318,6 +332,10 @@ a.hire-btn:hover {
 	background: rgba(255,255,255,.18);
 }
 
+a.learn-btn, a.hire-btn {
+	font-family: Proxima-nova-light;
+}
+
 .home-cta {
     transform: translateX(-50%);
     top: 160%;
@@ -391,7 +409,7 @@ main {
 		    bottom: 2.5%;
 		    right: 0;
 		    left: 0;
-		    background-color: rgba(0,0,0,0.7);
+		    background-color: rgba(0,0,0,.8);
 		    opacity: 0;
 		    transition: opacity .3s;
 		    -webkit-transition: opacity .3s;
